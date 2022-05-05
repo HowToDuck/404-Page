@@ -1,0 +1,80 @@
+* {
+  font-family: "Montserrat", serif;
+}
+html {
+  /* background-image: url(/404/bananaBG.jpg); */
+  background-image: url(bananaBG.jpg);
+  background-repeat: repeat;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: #ffe599;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px gray;
+}
+.banana {
+  font-family: "Chewy", serif;
+  font-size: 1.5rem;
+}
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "Exo 2", serif;
+  font-size: 60px;
+}
+h1 + p {
+  margin-top: 30px;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #2b230b;
+  /* -webkit-text-stroke: 2px black; */
+  /* border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px; */
+}
+p:nth-child(1) {
+  margin-bottom: 15px;
+}
+p:nth-child(5) {
+  margin-top: 15px;
+}
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .main-box {
+    width: 80%;
+    padding: 10px;
+  }
+}
